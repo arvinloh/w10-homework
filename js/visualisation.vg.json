@@ -9,7 +9,7 @@
   },
   "transform": [
     {
-      "filter": "datum.Month != 'Total'" // Filter out the 'Total' rows
+      "filter": "datum.Month != 'Total'"
     },
     {
       "fold": ["NSW", "Vic", "Qld", "WA", "SA", "Tas", "ACT", "NT"],
@@ -44,7 +44,7 @@
       "field": "Births",
       "type": "quantitative",
       "title": "Number of Births",
-      "scale": { "domain": [0, 30000] } // Adjusting Y-axis scale for better visualization
+      "scale": { "domain": [0, 30000] }
     },
     "color": {
       "field": "State",
