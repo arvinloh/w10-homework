@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly births by state in Australia with filter and tooltip.",
+  "title": "Monthly births by state in Australia with filter and tooltip.",
+  "width": 700,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/arvinloh/w10-homework/refs/heads/main/data/method_of_birth.csv",
     "format": { "type": "csv" }
@@ -17,8 +19,6 @@
       "filter": { "selection": "state_filter" }
     }
   ],
-  "width": 700,
-  "height": 400,
   "mark": "bar",
   "encoding": {
     "x": {
